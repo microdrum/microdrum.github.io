@@ -1,5 +1,5 @@
 ---
-title: Parts List v0.8
+title: Bill Of Materials v0.8
 lang: en
 ---
 The following electronic component links point to the Mouser reseller.
@@ -7,7 +7,7 @@ Obviously you can buy them elsewhere.
 Some alternatives are included where possible in case there are stock or
 availability issues for the main parts.
 
-## Mainboard v0.8 Parts
+## Mainboard v0.8
 
 | Part            | Qty | Description                                                      | Manufacturer Part No
 | --------------- | --- | ---------------------------------------------------------------- | -----------
@@ -58,7 +58,7 @@ availability issues for the main parts.
 | Header          | 2   | 1 x 36 header - split (will cover all headers)                   | [929834-02-36-RK](http://www2.mouser.com/Search/ProductDetail.aspx?R=0virtualkey0virtualkey517-929834-02-36-RK) 3M
 | Arduino2 Header | 1   | 2 x 13 header                                                    | [67996-236HLF](http://www2.mouser.com/Search/ProductDetail.aspx?R=0virtualkey0virtualkey649-67996-236HLF) FCI / Amphenol
 
-## Jack Board v0.4 Parts
+## Jack Board v0.4
 
 These quantities are for a single board, giving you 4 sockets.
 

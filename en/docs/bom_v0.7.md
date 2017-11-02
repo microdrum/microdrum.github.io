@@ -1,5 +1,5 @@
 ---
-title: Parts List v0.7
+title: Bill Of Materials v0.7
 lang: en
 ---
 This list of hardware parts focuses on Mouser part numbers, as the most commonly
@@ -7,7 +7,7 @@ used online electronics store. You can of course get the manufacturer's part
 number from there and buy elsewhere! Alternatives are included where possible
 in case there are stock or availability issues for the main parts.
 
-## Mainboard v0.7 Parts
+## Mainboard v0.7
 
 | Part              | Qty | Description                                                                     | Manufacturer Part No                                                                            | Possible Alternatives |
 | ----------------- | --- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------------------- |
@@ -75,7 +75,7 @@ Motherboard v0.7 board:
 connected to the computer via USB.
 If you do not wish it to reset every time you connect it set this to closed.
 
-## Jack Board v0.4 Parts
+## Jack Board v0.4
 
 | Part     | Qty | Description                                                      | Manufacturer Part No
 | -------- | --- | ---------------------------------------------------------------- | --------------
@@ -98,7 +98,7 @@ If you do not wish it to reset every time you connect it set this to closed.
 
 **NB**: These quantities are for a single board, giving you 4 sockets.
 
-## LCD v0.1 Parts
+## LCD v0.1
 
 There is currently no PCB available for this module, use stripboard or perfboard
 to build this.

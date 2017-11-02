@@ -1,5 +1,5 @@
 ---
-title: microDrum - FAQ
+title: FAQ
 lang: en
 ---
 ### What is the PCB v0.7 / v0.8 ?

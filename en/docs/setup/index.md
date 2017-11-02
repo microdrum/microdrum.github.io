@@ -3,60 +3,12 @@ title: How to Build/Setup a microDrum
 lang: en
 ---
 Note: Thanks go out to WesleyS for putting together the original instructions
-from which this wiki post is taken. The original post can be found [here](http://microdrum.net/forum/viewtopic.php?f=18&t=215)
+from which this wiki post is taken. The original post can be found
+[here](http://microdrum.net/forum/viewtopic.php?f=18&t=215).
 
-These instructions are primarily for breadboarding the microDrum system for
-people that aren't ready to jump straight to the PCB version.
+### Step 1: Setting up the environment
 
-## Intro
-
-Most of the parts to make this I already had available to me, so the I didn't
-have too buy too many things. If this is all new to you and you need to buy
-everything, keep in mind that the same money spent on all these materials could
-buy you the official Microdrum PCB, the parts kit, and multiplexers
-(all from the Store), but the piezos would still need to be purchased.
-It would save you money to go ahead and buy the official parts, but if you would
-rather do this, by all means go ahead :)
-
-### Step 1: Gather all components
-
-(Nearly all things can be bought from a local Radioshack instead of online.)
-
-| Quantity                   | Price (approximate) | Component |
-| -------------------------- | ------------------- | --------- |
-| 1                          | $29.95              |[Arduino Uno R3](http://www.allelectronics.com/item/ard-21/uno-r3/1.html)|
-| 1 (if breadboarding)       | $4.95               |[7 inch male/male jumpers cables](http://www.allelectronics.com/item/jm7-30/7-jumper-wires-m/m-30-pack/1.html)|
-| 1 (alternative to above)   | $3.50               |[22 Gauge wire](http://www.allelectronics.com/category/825480/wire/cable/solid-hook-up-wire-25-roll/1.html)|
-| 1-6 (for 8-48 drum inputs) | $0.65 for 10        |[1 Meg Ohm resistor](http://www.allelectronics.com/item/291-1.1m/1.1-meg-ohm-1/4-watt-resistor/1.html)|
-| 1                          | $0.65 for 10        |[120 Ohm resistor (should be cap?)](http://www.allelectronics.com/item/291-120/120-ohm-1/4-watt-resistor/1.html)|
-| 1                          | $4.00               |[400 Hole solderless breadboard](http://www.allelectronics.com/item/pb-400/solderless-breadboard-400-contacts/1.html)|
-| 1-6                        | $.70                |[TI SN74HC4851N Multiplexer](http://eu.mouser.com/ProductDetail/Texas-Instruments/SN74HC4851N/?qs=sGAEpiMZZMtxrAS98ir%252bs43QrNr9Atf5cGbdp%2fhEq74=)|
-| 6-48                       | $5.48 for 10        |[Piezo buzzers](http://eu.mouser.com/ProductDetail/Murata/7BB-27-4C/?qs=%2fha2pyFadugpqzbKouZTGT89obqhIq6eppuOR3ZF4PzJRpa3wfRdbQ%3d%3d)|
-| 1                          | $3.00-$5.00         |[A Male to B Male USB cable](https://www.amazon.com/AmazonBasics-Hi-Speed-A-Male-B-Male-Meters/dp/B001TH7GUA)|
-
-<br>
-
-A LED is optional
-
-For soldering leads to the piezos use a soldering iron and smaller gauge solder
-(20-24). I got those from Radioshack.
-
-* NOTE The quantities of parts are just for this build. If you would like to buy
-the maximum number of each parts so you don't have to do it later
-
-(or if you don't want to buy the PCB/kit), get
-(6) 1 Meg Ohm Resistors, (6) Multiplexers, and (up to 48) piezo buzzers. 
-
-### Step 2: Downloads
-
-[microDrum](/en/downloads)
-
-[The Official Arduino IDE (or just the drivers if you know how to install them)](http://arduino.cc/en/Main/Software)
-
-### Step 3: Setting up the environment
-
-* Install the Arduino IDE first. Just run the .exe file(wndows) and follow the
-  on screen prompts.
+* Install the [Arduino IDE](http://arduino.cc/en/Main/Software).
 
 * Now plug the Arduino up to the computer. The drivers should have been installed
   when the IDE was set up. If not, just manually update the driver.
@@ -91,7 +43,7 @@ To do this:
 
 If you need pictures or additional instructions for what was done above, go [here](http://arduino.cc/en/guide/windows)
 
-### Step 4: Uploading the microDrum Firmware
+### Step 2: Uploading the microDrum Firmware
 
 * Make sure your Arduino is still connected.
 * Extract the "microDRUM_ConfigTool_v1.0.zip" and "microDRUM_Firmware_v1.0.zip".
@@ -120,7 +72,7 @@ If you need pictures or additional instructions for what was done above, go [her
 * Make sure the Baud Rate is at 115200, then click upload.
 * It will say done and you have now uploaded the firmware.
 
-### Step 5: Construction
+### Step 3: Construction
 
 * Go ahead and unplug the Arduino for now.
 * Take the solderless breadboard and insert the multiplexer with the little "u" at the top.
@@ -147,9 +99,9 @@ If you need pictures or additional instructions for what was done above, go [her
 * Now take a jumper and put it in the + column. Connect the other end to the 5v on the Arduino.
 * Use another jumper to connect the - column to Gnd on the Arduino. 
 
-### Step 6: Construction continued
+### Step 4: Construction continued
 
-All of the remaining open pins on the miltiplexer can be used as inputs.
+All of the remaining open pins on the multiplexer can be used as inputs.
 
 * If you plug the Arduino into the computer and go to the monitor tab you will
   see that signals are being shown even though nothing is triggering it. 
@@ -158,9 +110,11 @@ All of the remaining open pins on the miltiplexer can be used as inputs.
   the top left pin open. 
 
 * Now get the piezo, solder, wire, and the soldering iron.
+
 * Solder a piece of wire to the white part of the piezo and another to the brass ring. 
 
 * Strip about half an inch of wire on the end not connected to the piezo.
+
 * The wire that is soldered to the brass ring goes to the - column and the other
   goes to the open multiplexer pin. 
 
