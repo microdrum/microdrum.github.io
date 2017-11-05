@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+{% include variables.html %}
 	<head>
 {% include head.html %}
 	</head>
 	<body>
+		<a href="#content" class="sr-only">Skip to content</a>
 		<div class="container">
 {% include header.html %}
 			<div class="slideshow-container">
@@ -17,13 +19,12 @@
 					<img src="/assets/img/nanoDrum_v1_0-2.jpg" style="width:100%">
 				</div>
 			</div><br>
-			<a href="#content" class="sr-only">Skip to content</a>
 			<div class="row" id="content">
 				<div class="col-md-9">
 					<article>
-					<div class="jumbotron">
+						<div class="jumbotron">
 {{ content }}
-					</div>
+						</div>
 					</article>
 				</div>
 				<div class="col-md-3">
