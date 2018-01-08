@@ -21,5 +21,6 @@ print $fh <<EOF
 title: "$title"
 date: $date
 comments: true
+lang: en
 ---
 EOF
